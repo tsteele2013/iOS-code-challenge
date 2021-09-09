@@ -6,21 +6,15 @@
 //  Copyright © 2018 Dustin Lange. All rights reserved.
 //
 
-#import "NXTBusinessTableViewCell+YLPBusiness.h"
-#import "YLPBusiness.h"
-
-@implementation NXTBusinessTableViewCell (YLPBusiness) 
-
-- (void)configureCell:(YLPBusiness *)business
-{
-    // Business Name
-    self.nameLabel.text = business.name;
-}
-
-#pragma mark - NXTBindingDataForObjectDelegate
-- (void)bindingDataForObject:(id)object
-{
-    [self configureCell:(YLPBusiness *)object];
-}
-
-@end
+//#import "NXTBusinessTableViewCell+YLPBusiness.h"
+////#import "YLPBusiness.h"
+//#import "ios_code_challenge-Swift.h"
+//
+//
+//#pragma mark - NXTBindingDataForObjectDelegate
+//- (void)bindingDataForObject:(id)object
+//{
+//    [self configureCell:(YLPBusiness *)object];
+//}
+//
+//@end

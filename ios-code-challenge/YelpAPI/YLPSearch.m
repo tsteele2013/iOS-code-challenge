@@ -8,6 +8,7 @@
 
 #import "YLPSearch.h"
 #import "YLPBusiness.h"
+#import "ios_code_challenge-Swift.h"
 
 @implementation YLPSearch
 
@@ -26,7 +27,7 @@
     NSMutableArray<YLPBusiness *> *mutableBusinessesJSON = [[NSMutableArray alloc] init];
     
     for (NSDictionary *business in businessesJSON) {
-        [mutableBusinessesJSON addObject:[[YLPBusiness alloc] initWithAttributes:business]];
+        [mutableBusinessesJSON addObject:[[YLPBusiness alloc] initWithAttributes:business ]];
     }
     
     return mutableBusinessesJSON;

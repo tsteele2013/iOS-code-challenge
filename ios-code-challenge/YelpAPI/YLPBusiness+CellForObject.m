@@ -8,8 +8,9 @@
 
 #import "YLPBusiness+CellForObject.h"
 #import "NXTBusinessTableViewCell.h"
+#import "ios_code_challenge-Swift.h"
 
-NSString *const kNXTBusinessTableViewCellIdentifier = @"NXTBusinessTableViewCellIdentifier";
+NSString *const kNXTBusinessTableViewCellIdentifier = @"BusinessCell";
 
 @implementation YLPBusiness (CellForObject)
 
@@ -17,19 +18,19 @@ NSString *const kNXTBusinessTableViewCellIdentifier = @"NXTBusinessTableViewCell
 - (id<NXTBindingDataForObjectDelegate>)cellForObjectForTableView:(id)tableView
 {
     id<NXTBindingDataForObjectDelegate> cell = [tableView dequeueReusableCellWithIdentifier:kNXTBusinessTableViewCellIdentifier];
-    
+
     if(!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([NXTBusinessTableViewCell class])
+        cell = [[[NSBundle mainBundle] loadNibNamed:kNXTBusinessTableViewCellIdentifier
                                               owner:nil
                                             options:nil] firstObject];
     }
-    
+
     return cell;
 }
 
 - (CGFloat)estimatedCellHeightForObjectForTableView:(UITableView *)tableView
 {
-    return 55.0f;
+    return 150.0f;
 }
 
 @end

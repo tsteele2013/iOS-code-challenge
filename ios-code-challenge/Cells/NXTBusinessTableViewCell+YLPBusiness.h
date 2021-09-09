@@ -9,7 +9,7 @@
 #import "NXTBusinessTableViewCell.h"
 #import "NXTBindingDataForObjectDelegate.h"
 
-@class YLPBusiness;
+//@class YLPBusiness;
 
 @interface NXTBusinessTableViewCell (YLPBusiness) <NXTBindingDataForObjectDelegate>
 

@@ -8,8 +8,9 @@
 
 #import "AFYelpAPIClient.h"
 #import "AFOAuth2Manager.h"
+#import "ios_code_challenge-Swift.h"
 
-static NSString *const kYelpAPIKey = @"";
+static NSString *const kYelpAPIKey = @"a042ojLC_GBqk95TEKZ9Q4ucubVz77Lo_NGldLtfTWn3S2i2xjBv6Uzg5hTL6EnzXSdSCDuiuSQF_G_MvMDWR1bsoPsBoRDgA5WWX2_6HzKPfM7bESSVduLOcBMxYXYx";
 static NSString *const kYelpAPIBaseURL = @"https://api.yelp.com/v3/";
 
 @interface AFYelpAPIClient()

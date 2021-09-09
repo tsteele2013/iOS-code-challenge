@@ -10,6 +10,7 @@
 
 #import "YLPBusiness.h"
 #import "NXTCellForObjectDelegate.h"
+#import "ios_code_challenge-Swift.h"
 
 @interface YLPBusiness (CellForObject) <NXTCellForObjectDelegate>
 

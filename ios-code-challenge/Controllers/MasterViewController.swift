@@ -29,10 +29,14 @@ class MasterViewController: UITableViewController {
         
         let query = YLPSearchQuery(location: "5550 West Executive Dr. Tampa, FL 33609")
         AFYelpAPIClient.shared().search(with: query, completionHandler: { [weak self] (searchResult, error) in
+            
             guard let strongSelf = self,
                 let dataSource = strongSelf.dataSource,
                 let businesses = searchResult?.businesses else {
                     return
+            }
+            for i in businesses {
+                print(i)
             }
             dataSource.setObjects(businesses)
             strongSelf.tableView.reloadData()
@@ -41,6 +45,7 @@ class MasterViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController?.isCollapsed ?? false
+        tableView.rowHeight = 150
         super.viewDidAppear(animated)
     }
     

@@ -9,6 +9,7 @@
 #import "AFYelpAPIClient+Search.h"
 #import "YLPSearchQuery.h"
 #import "YLPSearch.h"
+#import "ios_code_challenge-Swift.h"
 
 @implementation AFYelpAPIClient (Search)
 
